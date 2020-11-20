@@ -1,0 +1,15 @@
+/vendor
+/wp
+/wp-config.php
+/content/plugins/*
+!/content/plugins/hello-world-oprofile
+!/content/plugins/helloclock
+!/content/plugins/o-redirect-to
+!/content/plugins/oprojects
+!/content/plugins/oskills
+!/content/plugins/oroles
+/content/themes/*
+!/content/themes/oprofile
+/content/languages
+/content/upgrade
+/content/uploads

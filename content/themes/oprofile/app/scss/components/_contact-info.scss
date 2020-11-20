@@ -1,0 +1,35 @@
+.contact-info {
+
+    &__part {
+        border-bottom: 1px solid lighten($color-bg-footer, 30);
+        padding: 1em;
+        position: relative;
+
+        &:last-child {
+            border:none;
+        }
+
+        .fa {
+            position: absolute;
+            color: lighten($color-bg-footer, 30);
+        }
+
+        &__label {
+            margin-left: 1.5em;
+            margin-bottom: 0.5em;
+            font-weight: bold;
+        }
+
+        &__content {
+            margin-left: 1.5em;
+            font-size: 0.8em;
+            color: lighten($color-bg-footer, 30);
+            font-weight: bold;
+
+            &.is-email {
+                color: $color-text;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

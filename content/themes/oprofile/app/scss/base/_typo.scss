@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab&display=swap');
+
+html,
+body {
+    font-size: $font-size;
+    @media (min-width: $breakpoint-medium) {
+        font-size: $font-size-medium;
+    }
+
+    @media (min-width: $breakpoint-large) {
+        font-size: $font-size-large;
+    }
+}
+
+body,
+a {
+    font-family: $font-family-content, $font-family-fallback;
+    color: $color-text;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-family-title;
+}

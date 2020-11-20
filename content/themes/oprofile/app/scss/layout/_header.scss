@@ -1,0 +1,20 @@
+.header {
+    background-color: $color-bg-alt;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+
+    z-index: 50;
+
+    &.fixed {
+        position: fixed;
+        width: 100%;
+        background-image: linear-gradient(
+            to right,
+            $color-brand,
+            $color-brand-alt
+        );
+    }
+}

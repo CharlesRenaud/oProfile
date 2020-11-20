@@ -1,0 +1,46 @@
+.field {
+
+    width: 100%;
+
+    label {
+        display:block;
+        font-weight: bold;
+        padding-bottom: 0.3em;
+    }
+
+    input[type=text],
+    input[type=email],
+    textarea {
+        width: 100%;
+        background-color: lighten($color-bg-footer, 10);
+        border: none;
+        color: $color-text;
+        font-weight: bold;
+        padding: 0.5em;
+
+        &:focus {
+            border: none;
+            outline: none;
+        }
+    }
+
+    textarea {
+        height: 6em;
+        resize: none;
+    }
+
+    input[type=submit] {
+        color: $color-bg-footer;
+        background-color: $color-bg;
+        font-weight: bold;
+        padding: 0.8em;
+        border: none;
+        margin-top: 0.5em;
+    }
+
+    @media (min-width: $breakpoint-large) {
+        &.is-half {
+            width: 45%;
+        }
+    }
+}

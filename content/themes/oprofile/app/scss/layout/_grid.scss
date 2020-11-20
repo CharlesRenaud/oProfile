@@ -1,0 +1,11 @@
+.grid {
+    width:80%;
+    margin: 1.5em auto;
+    background-color: lighten($color-bg-alt, 90%);
+    border: 1px solid lighten($color-bg-alt, 75%);
+    border-radius: 5px;
+    color: $color-text-alt;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}

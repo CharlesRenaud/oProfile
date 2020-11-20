@@ -1,0 +1,16 @@
+.main-nav {
+    text-align: center;
+    width: 40%;
+    margin-bottom: 2em;
+
+    &__item {
+        border-bottom: 1px solid transparentize($color-brand, 0.7);
+        padding: 1em;
+        text-transform: uppercase;
+        font-weight: bold;
+
+        &:last-child {
+            border: none;
+        }
+    }
+}

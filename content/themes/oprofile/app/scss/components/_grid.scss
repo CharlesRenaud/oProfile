@@ -1,0 +1,57 @@
+.grid {
+    &__item {
+        border-bottom: 1px solid lighten($color-bg-alt, 85);
+        width: 100%;
+        padding: 2em;
+        position: relative;
+    
+        &__icon {
+            position: absolute;
+            top: 1em;
+            right: 1em;
+            background-color: $color-brand;
+            width: 2em;
+            height: 2em;
+            border-radius: 5px;
+            color: $color-text;
+            text-align: center;
+            line-height: 2em;
+        }
+
+        &__title {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        &__content {
+            margin-top: 0.8em;
+        }
+
+        &:last-child {
+            border: none;
+        }
+
+        @media (min-width: $breakpoint-large) {
+            width: 50%;
+
+            &:nth-child(2n) {
+                border-left: 1px solid lighten($color-bg-alt, 85);
+            }
+            
+            // https://developer.mozilla.org/fr/docs/Web/CSS/:nth-last-child
+            &:nth-last-child(-n+2) {
+                border-bottom: none;
+            }
+
+            &__icon {
+                left: 1em;
+            }
+
+            &__title,
+            &__content {
+                margin-left: 3em;
+            }
+        }
+
+    }
+}

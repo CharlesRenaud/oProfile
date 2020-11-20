@@ -1,0 +1,27 @@
+.posts {
+
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+
+    .post {
+        width: 100%;
+
+        @media(min-width: $breakpoint-medium) {
+            width: 50%;
+        }
+
+        @media(min-width: $breakpoint-large) {
+            width: 40%;
+
+            // https://developer.mozilla.org/fr/docs/Web/CSS/:nth-child
+
+            &:nth-child(4n-2),
+            &:nth-child(4n-1){
+                width:60%;
+            }
+
+        }
+    }
+
+}

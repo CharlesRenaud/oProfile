@@ -1,0 +1,22 @@
+.footer {
+    background-color: $color-bg-footer;
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+
+    .contact-form {
+        width: 100%;
+
+        @media (min-width: $breakpoint-large) {
+            width: 60%;
+        }
+    }
+
+    .contact-info {
+        width: 100%;
+
+        @media (min-width: $breakpoint-large) {
+            width: 40%;
+        }
+    }
+}

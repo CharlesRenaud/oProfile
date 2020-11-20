@@ -1,0 +1,14 @@
+.intro {
+    font-weight: bold;
+    width: 50%;
+
+    &__title {
+        font-size: 2em;
+        margin-bottom: 1em;
+    }
+
+    &__content {
+        margin-bottom: 2em;
+        line-height: 1.3em;
+    }
+}
